@@ -1,0 +1,15 @@
+C:\Users\owner\Desktop\Lync_sockets\LyncServerC#\LyncServer\LyncDAL\bin\Debug\LyncDAL.dll
+C:\Users\owner\Desktop\Lync_sockets\LyncServerC#\LyncServer\LyncDAL\bin\Debug\LyncDAL.pdb
+C:\Users\owner\Desktop\Lync_sockets\LyncServerC#\LyncServer\LyncDAL\bin\Debug\EntityFramework.dll
+C:\Users\owner\Desktop\Lync_sockets\LyncServerC#\LyncServer\LyncDAL\obj\Debug\LyncDAL.dll
+C:\Users\owner\Desktop\Lync_sockets\LyncServerC#\LyncServer\LyncDAL\obj\Debug\LyncDAL.pdb
+C:\Users\owner\Desktop\Lync_sockets\LyncServerC#\LyncServer\LyncDAL\bin\Debug\LyncDAL.dll.config
+C:\Users\owner\Desktop\Lync_sockets\LyncServerC#\LyncServer\LyncDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\owner\Desktop\Lync_sockets\LyncServerC#\LyncServer\LyncDAL\bin\Debug\EntityFramework.xml
+C:\Users\owner\Desktop\Lync_sockets\LyncServerC#\LyncServer\LyncDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\owner\Desktop\Lync_sockets\LyncServerC#\LyncServer\LyncDAL\bin\Debug\MySql.Data.dll
+C:\Users\owner\Desktop\Lync_sockets\LyncServerC#\LyncServer\LyncDAL\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\owner\Desktop\Lync_sockets\LyncServerC#\LyncServer\LyncDAL\obj\Debug\LyncDAL.Migrations.mg.resources
+C:\Users\owner\Desktop\Lync_sockets\LyncServerC#\LyncServer\LyncDAL\obj\Debug\LyncDAL.csproj.GenerateResource.Cache
+C:\Users\owner\Desktop\Lync_sockets\LyncServerC#\LyncServer\LyncDAL\obj\Debug\LyncDAL.csprojResolveAssemblyReference.cache
+C:\Users\owner\Desktop\Lync_sockets\LyncServerC#\LyncServer\LyncDAL\obj\Debug\LyncDAL.Migrations.mg1.resources

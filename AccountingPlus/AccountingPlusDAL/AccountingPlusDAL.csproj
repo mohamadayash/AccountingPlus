@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{357E390A-9A9C-4CF8-9EBD-59A750E6977C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AccountingPlusDAL</RootNamespace>
+    <AssemblyName>AccountingPlusDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MySql.ConnectorNET.Data.6.8.3.2\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MySql.ConnectorNET.Entity.6.8.3.2\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Migrations\201609041011599_mg.cs" />
+    <Compile Include="Migrations\201609041011599_mg.Designer.cs">
+      <DependentUpon>201609041011599_mg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609041027397_mg1.cs" />
+    <Compile Include="Migrations\201609041027397_mg1.Designer.cs">
+      <DependentUpon>201609041027397_mg1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609041108383_mg2.cs" />
+    <Compile Include="Migrations\201609041108383_mg2.Designer.cs">
+      <DependentUpon>201609041108383_mg2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609041230420_mg3.cs" />
+    <Compile Include="Migrations\201609041230420_mg3.Designer.cs">
+      <DependentUpon>201609041230420_mg3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609041309101_mg4.cs" />
+    <Compile Include="Migrations\201609041309101_mg4.Designer.cs">
+      <DependentUpon>201609041309101_mg4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609041513252_mg5.cs" />
+    <Compile Include="Migrations\201609041513252_mg5.Designer.cs">
+      <DependentUpon>201609041513252_mg5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\CurrencyRate.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\InvoiceLine.cs" />
+    <Compile Include="Models\Unit.cs" />
+    <Compile Include="Models\Structure.cs" />
+    <Compile Include="Models\TempControlAccount.cs" />
+    <Compile Include="Models\Vendor.cs" />
+    <Compile Include="Repository\ProductUnitRepository.cs" />
+    <Compile Include="Repository\CategoryRepository.cs" />
+    <Compile Include="Repository\UnitRepository.cs" />
+    <Compile Include="Repository\StructureReposirtory.cs" />
+    <Compile Include="Repository\CustomerRepository.cs" />
+    <Compile Include="Repository\VendorRepository.cs" />
+    <Compile Include="Repository\TempControlAccountRepository.cs" />
+    <Compile Include="Repository\CurrencyRepository.cs" />
+    <Compile Include="Repository\ControlAccountRepository.cs" />
+    <Compile Include="Repository\AccountRepository.cs" />
+    <Compile Include="Repository\GenericRepository.cs" />
+    <Compile Include="Repository\IGenericRepository.cs" />
+    <Compile Include="Services\AccountService.cs" />
+    <Compile Include="Services\ProductService.cs" />
+    <Compile Include="Services\CurrencyService.cs" />
+    <Compile Include="Services\PersonService.cs" />
+    <Compile Include="Services\ServiceManager.cs" />
+    <Compile Include="Services\StructureService.cs" />
+    <None Include="App.config" />
+    <Compile Include="Context\AccountingPlusContext.cs" />
+    <Compile Include="Models\Voucher.cs" />
+    <Compile Include="Models\FiscalYear.cs" />
+    <Compile Include="Models\Invoice.cs" />
+    <Compile Include="Models\Currency.cs" />
+    <Compile Include="Models\ProductUnit.cs" />
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\ControlAccount.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201609041011599_mg.resx">
+      <DependentUpon>201609041011599_mg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609041027397_mg1.resx">
+      <DependentUpon>201609041027397_mg1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609041108383_mg2.resx">
+      <DependentUpon>201609041108383_mg2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609041230420_mg3.resx">
+      <DependentUpon>201609041230420_mg3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609041309101_mg4.resx">
+      <DependentUpon>201609041309101_mg4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609041513252_mg5.resx">
+      <DependentUpon>201609041513252_mg5.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
